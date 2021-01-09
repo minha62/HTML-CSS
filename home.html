@@ -2,90 +2,25 @@
 <html lang="kr">
 
 <head>
-    <link rel="shortcut icon" sizes="16x16 32x32 64x64" href="https://nomadcoders.co/m.png" />
     <title>Home - My first Website.</title>
     <link href="styles.css" rel="stylesheet" />
     <style>
-        * {
-            border: 2px dashed black;
-        }
-
-        h1 {
-            color: yellowgreen;
-            font-style: italic;
-            font-size: 50px;
-        }
-
-        address {
-            text-align: center;
-            color: tomato;
-        }
-
-        html {
-            background-color: wheat;
-        }
-
-        div {
-            padding: 10px;
-            border: 2px solid black;
-        }
-
-        #first {
-            background-color: whitesmoke;
-            height: 150px;
-            width: 150px;
-        }
-
-        #second {
-            background-color: yellow;
-            height: 100px;
-            width: 100px;
-        }
-
-        #third {
-            background-color: aquamarine;
-            height: 50px;
-            width: 50px;
-        }
-
-        #fourth {
-            background-color: coral;
-            height: 25px;
-            width: 25px;
-        }
-
         body {
             margin: 20px;
-            padding: 20px;
-            background-color: teal;
         }
 
         span {
-            border-style: dotted;
+            background-color: cornflowerblue;
+            padding: 20px;
+            margin: 30px;
+            < !--padding은 사방에 다 적용됨-->< !--margin은 좌우만 적용됨 inline은 높이와 너비가 없기 때문. 위아래도 적용하고 싶다면 inline을 block으로 변경해야함-->
         }
     </style>
-    <meta charset="utf-8" />
-    <meta name="description" content="This is my website" />
 </head>
 
 <body>
-    <header></header>
-
-    <main>
-        <div id="first">
-            <div id="second">
-                <div id="third">
-                    <div id="fourth">
-                        <span>hello</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        &copy; 2020 N.C
-    </footer>
+    <span>Hello</span>
+    <span>Hello</span>
 </body>
 
 </html>
