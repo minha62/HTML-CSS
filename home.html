@@ -9,18 +9,31 @@
             margin: 20px;
         }
 
-        span {
-            background-color: cornflowerblue;
-            padding: 20px;
-            margin: 30px;
-            < !--padding은 사방에 다 적용됨-->< !--margin은 좌우만 적용됨 inline은 높이와 너비가 없기 때문. 위아래도 적용하고 싶다면 inline을 block으로 변경해야함-->
+        .btn {
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        .teal {
+            background-color: teal;
+        }
+
+        .tomato {
+            background-color: tomato;
+            color: whitesmoke;
         }
     </style>
 </head>
 
 <body>
-    <span>Hello</span>
-    <span>Hello</span>
+    <!--id는 고유하게 써야하지만 class는 많은 곳에서 원하는 만큼 사용가능-->
+    <span class="btn teal">Hello</span>
+    <span class="btn tomato">Hello</span>
+    <span class="btn teal">Hello</span>
+    <!--한 요소에 여러 class 사용가능-->
+    <span class="btn tomato hello honey potato">Hello</span>
+    <span class="btn teal">Hello</span>
+    <span class="btn tomato">Hello</span>
 </body>
 
 </html>
