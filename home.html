@@ -6,34 +6,43 @@
     <link href="styles.css" rel="stylesheet" />
     <style>
         body {
+            height: 100vh;
+            < !-- vh=view height // 100 = 100%-->
             margin: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            flex-direction: row;
+            flex-direction: column-reverse;
+            flex-direction: row-reverse;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-wrap: wrap-reverse;
+            flex-wrap: nowrap;
+            < !-- "flex-direction"main axis가 수직 cross axis가 수평으로 뒤바뀜-->< !--justify-content=>main axis // align-items => cross axis-->
         }
 
-        .btn {
-            padding: 10px 15px;
-            border-radius: 5px;
-        }
-
-        .teal {
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 28px;
+            color: white;
+            width: 300px;
+            height: 300px;
             background-color: teal;
         }
 
-        .tomato {
-            background-color: tomato;
-            color: whitesmoke;
+        #second {
+            background-color: thistle;
         }
     </style>
 </head>
 
 <body>
-    <!--id는 고유하게 써야하지만 class는 많은 곳에서 원하는 만큼 사용가능-->
-    <span class="btn teal">Hello</span>
-    <span class="btn tomato">Hello</span>
-    <span class="btn teal">Hello</span>
-    <!--한 요소에 여러 class 사용가능-->
-    <span class="btn tomato hello honey potato">Hello</span>
-    <span class="btn teal">Hello</span>
-    <span class="btn tomato">Hello</span>
+    <div>1</div>
+    <div id="second">2</div>
+    <div>3</div>
 </body>
 
 </html>
