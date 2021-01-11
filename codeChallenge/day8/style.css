@@ -1,0 +1,65 @@
+html{
+    background-color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+}
+
+ h1{
+    font-size: 32px;
+    text-align: center;
+  }
+
+  p{
+      font-size: 22px;
+      padding-left: 10px;
+  }
+
+  aside{
+      padding-left: 10px;
+      font-size: 15px;
+  }
+  
+  body{
+      height: 100vh;
+      margin: 20px;
+      position: relative;
+  }
+
+  .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .outside{
+      height: 300px;
+      width: 200px;
+      border: 5px solid white;
+      margin: 10px;
+      position: relative; 
+  }
+
+  .inside{
+      height: 100px;
+      width: 100%;
+      position: absolute;
+      top: 20px;
+      background-color: white;
+  }
+
+  #tomato{
+      background-color: tomato;
+  }
+
+  #teal{
+      background-color: teal;
+  }
+
+  #burlywood{
+      background-color: burlywood;
+  }
+
+  #thistle{
+      background-color: thistle;
+  }
+
