@@ -17,35 +17,47 @@
             border-radius: 10px;
         }
 
-        div>span {
-            text-decoration: underline;
+        /* input:optional {
+            border: 1px solid wheat;
+        } 
+
+        input:required {
+            border: 1px solid tomato;
+        } */
+
+        input {
+            border: 1px solid wheat;
         }
 
-        p span {
-            color: teal;
+        input:required {
+            border-color: tomato;
         }
 
-        p+span {
-            text-decoration: underline;
+        input[type="password"] {
+            background-color: thistle;
         }
 
-        p~span {
-            text-decoration: underline;
+        input[placeholder="username"] {
+            background-color: turquoise;
         }
 
-        < !--p바로 뒤에 span이 있지 않으므로 "+"는 적용안됨. 형제와 바로 뒤에 오는 형제의 관계 ">"는 부모와 바로 및 자식의 관계-->< !--"~"쓰면 형제와 형제 관계지만 꼭 바로 뒤에 올 필요 없음.-->
+        input[placeholder~="name"] {
+            /* ~는 포함 의미 */
+            background-color: violet;
+        }
+
+        /*attribute selectors mdn 찾아보면 더 많음*/
     </style>
 </head>
 
 <body>
     <div>
-        <span>hello</span>
-        <p>
-            Lorem sdlfjsdlflads dslfkj sdfsdfs sdfsdf sdfslld oerk wer
-            dflsd dfkjsa erwdf sdfas. <span>inside</span>
-        </p>
-        <address>hi</address>
-        <span>hello</span>
+        <form>
+            <input type="text" placeholder="username" />
+            <input type="text" placeholder="First name" />
+            <input type="text" placeholder="Last name" />
+            <input type="password" required placeholder="password" />
+        </form>
     </div>
 
 </body>
