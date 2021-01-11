@@ -10,55 +10,39 @@
             margin: 50px;
         }
 
-        div {
-            width: 300px;
-            height: 300px;
-            background-color: wheat;
-            position: relative;
-        }
-
-        div:first-child {
-            background-color: turquoise;
-        }
-
         span {
-            background-color: tomato;
+            background-color: yellowgreen;
+            color: tomato;
+            padding: 5px;
+            border-radius: 10px;
         }
 
-        span:nth-child(2),
-        span:nth-child(4) {
-            background-color: teal;
+        div>span {
+            text-decoration: underline;
         }
 
-        span:nth-child(even) {
-            background-color: teal;
+        p span {
+            color: teal;
         }
 
-        span:nth-child(odd) {
-            background-color: violet;
+        p+span {
+            text-decoration: underline;
         }
 
-        span:nth-child(2n+1) {}
-
-        span:nth-child(2n) {}
-
-        span:nth-child(3n+1) {}
+        < !--">"는 바로 밑 자식을 가리킴-->< !--"+"는 p다음에 오는 span을 가리킴-->
     </style>
 </head>
 
 <body>
-    <div></div>
+    <div>
+        <span>hello</span>
+        <p>
+            Lorem sdlfjsdlflads dslfkj sdfsdfs sdfsdf sdfslld oerk wer
+            dflsd dfkjsa erwdf sdfas. <span>inside</span>
+        </p>
+        <span>hello</span>
+    </div>
 
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
 </body>
 
 </html>
