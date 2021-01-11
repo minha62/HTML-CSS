@@ -1,38 +1,33 @@
-html{
-    background-color: tomato;
-  }
-  
   body{
+    background-color: tomato;
     height: 100vh;
-    margin: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
-  #outside{
+  .outside{
     background-color: wheat;
-    height: 230px;
-    width: 230px;
+    height: 200px;
+    width: 200px;
+    padding: 20px;
     border: 2px solid black;
     display: flex;
-    justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
   
   .inside{
     background-color: teal;
-    height: 10px; 
-    padding: 20px;
+    height: 50px; 
+    width: 50px;
+    border: 3px solid white; 
   }
   
-  .smallBox{
-    border: 3px solid white;
-    width: 10px;
-  }
-  
-  #longBox{
-    border: 3px dashed white;
-    width: 150px;
+  .longBox{
+    /* border라고 하면 검은색. border-style로 써야함*/
+    border-style: dashed;
+    width: 100%;
   }
