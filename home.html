@@ -14,12 +14,12 @@
             border-radius: 5px;
             font-size: 50px;
 
-            /*transition은 state(hover)에 있으면 안되고, 가장 처음 생겨난 곳(root) element에 있어야 함*/
-            transition: background-color 10s ease-in-out, color 5s ease-in-out;
-            transition: all 5s ease-in-out;
+            transition: all 1s cubic-bezier(0.6, 0, 0.735, 0.045);
+            transition: color 1s cubic-bezier(0.6, 0, 0.735, 0.045),
+                border-radius 5s ease-in-out, background-color 10s ease-out;
         }
 
-        /*transition으로 변화시키려는 건 hover안에 있어야 함*/
+        /*hover, active, focus, focus-within일때도 transition 가능*/
         a:hover {
             border-radius: 20px;
             color: tomato;
