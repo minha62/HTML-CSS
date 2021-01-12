@@ -17,48 +17,58 @@
             border-radius: 10px;
         }
 
-        /* input:optional {
-            border: 1px solid wheat;
-        } 
-
-        input:required {
-            border: 1px solid tomato;
-        } */
-
-        input {
-            border: 1px solid wheat;
+        button:active {
+            background-color: tomato;
         }
 
-        input:required {
-            border-color: tomato;
-        }
-
-        input[type="password"] {
+        button:hover {
             background-color: thistle;
         }
 
-        input[placeholder="username"] {
-            background-color: turquoise;
+        input:focus {
+            background-color: teal;
         }
 
-        input[placeholder~="name"] {
-            /* ~는 포함 의미 */
-            background-color: violet;
+        a:visited {
+            color: tomato;
         }
 
-        /*attribute selectors mdn 찾아보면 더 많음*/
+        form {
+            border: 1px solid salmon;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        /*focus-within은 focused인 자식을 가진 부모 element에 적용됨*/
+        form:focus-within {
+            background-color: seagreen;
+        }
+
+        form:hover input {
+            background-color: sienna;
+        }
+
+        form:hover input:focus {
+            background-color: darkblue;
+        }
     </style>
 </head>
 
 <body>
     <div>
-        <form>
-            <input type="text" placeholder="username" />
-            <input type="text" placeholder="First name" />
-            <input type="text" placeholder="Last name" />
-            <input type="password" required placeholder="password" />
-        </form>
+        <button>hello</button>
+        <input type="text" />
+        <input type="text" />
     </div>
+
+    <a href="https:apple.com">Go to apple</a>
+
+    <form>
+        <input type="text" name="" id="" />
+        <input type="text" name="" id="" />
+        <input type="text" name="" id="" />
+    </form>
 
 </body>
 
