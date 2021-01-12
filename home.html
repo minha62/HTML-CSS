@@ -5,21 +5,20 @@
     <title>Home - My first Website.</title>
     <link href="styles.css" rel="stylesheet" />
     <style>
+        @keyframes coinFlip {
+            from {
+                transform: rotateY(0);
+            }
+
+            to {
+                transform: rotateY(360deg);
+            }
+        }
+
         img {
             border: 5px solid black;
             border-radius: 50%;
-            /*위 내용 쓰면 원이 됨*/
-            /* transform: rotateY(85deg) rotateX(20deg) rotateZ(10deg);
-            transform: translateX(300px); */
-            /*transformation은 다른 box element or 이미지에 영향을 끼치지 않음*/
-
-            transition: transform 2s ease-in-out;
-        }
-
-        /*transition mdn에서 찾아보기*/
-
-        img:hover {
-            transform: rotateY(360deg) scale(0.5);
+            animation: coinFlip 5s ease-in-out infinite;
         }
     </style>
 </head>
