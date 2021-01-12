@@ -5,70 +5,32 @@
     <title>Home - My first Website.</title>
     <link href="styles.css" rel="stylesheet" />
     <style>
-        body {
-            height: 1000vh;
-            margin: 50px;
-        }
-
-        span {
-            background-color: yellowgreen;
-            color: tomato;
-            padding: 5px;
-            border-radius: 10px;
-        }
-
-        button:active {
+        a {
+            color: white;
             background-color: tomato;
+            text-decoration: none;
+            /*delete underline*/
+            padding: 3px 5px;
+            border-radius: 5px;
+            font-size: 50px;
+
+            /*transition은 state(hover)에 있으면 안되고, 가장 처음 생겨난 곳(root) element에 있어야 함*/
+            transition: background-color 10s ease-in-out, color 5s ease-in-out;
+            transition: all 5s ease-in-out;
         }
 
-        button:hover {
-            background-color: thistle;
-        }
-
-        input:focus {
-            background-color: teal;
-        }
-
-        a:visited {
+        /*transition으로 변화시키려는 건 hover안에 있어야 함*/
+        a:hover {
+            border-radius: 20px;
             color: tomato;
-        }
-
-        form {
-            border: 1px solid salmon;
-            display: flex;
-            flex-direction: column;
-            padding: 20px;
-        }
-
-        /*focus-within은 focused인 자식을 가진 부모 element에 적용됨*/
-        form:focus-within {
-            background-color: seagreen;
-        }
-
-        form:hover input {
-            background-color: sienna;
-        }
-
-        form:hover input:focus {
-            background-color: darkblue;
+            background-color: wheat;
         }
     </style>
 </head>
 
 <body>
-    <div>
-        <button>hello</button>
-        <input type="text" />
-        <input type="text" />
-    </div>
 
-    <a href="https:apple.com">Go to apple</a>
-
-    <form>
-        <input type="text" name="" id="" />
-        <input type="text" name="" id="" />
-        <input type="text" name="" id="" />
-    </form>
+    <a href="#">Go home</a>
 
 </body>
 
